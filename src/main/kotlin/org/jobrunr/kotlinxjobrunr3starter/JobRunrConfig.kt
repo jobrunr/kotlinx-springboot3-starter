@@ -16,11 +16,8 @@ import org.springframework.context.annotation.Configuration
 class JobRunrConfig {
 
     @Bean
-    fun storageProvider(jobMapper: JobMapper): StorageProvider {
-        val provider = InMemoryStorageProvider()
-        // this should be the kotlinx one
-        provider.setJobMapper(jobMapper)
-        return provider
+    fun jobMapper(jsonMapper: JsonMapper): JobMapper {
+        return JobMapper(jsonMapper)
     }
 
     // You will also need to create a jobMapper bean that initializes the JobRunr kotlinx serialization mapper
