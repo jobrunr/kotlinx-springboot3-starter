@@ -17,12 +17,11 @@ java {
 
 repositories {
     mavenCentral()
-    mavenLocal()
 }
 
 dependencies {
-    implementation 'org.jobrunr:jobrunr-spring-boot-3-starter:1.0.0-SNAPSHOT'
-    implementation 'org.jobrunr:jobrunr-kotlin-2.1-support:1.0.0-SNAPSHOT'
+    implementation 'org.jobrunr:jobrunr-spring-boot-3-starter:8.0.0-beta.2'
+    implementation 'org.jobrunr:jobrunr-kotlin-2.1-support:8.0.0-beta.2'
 
     implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.8.1'
     implementation 'org.springframework.boot:spring-boot-starter-web'
